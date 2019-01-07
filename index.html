@@ -36,32 +36,23 @@
   </div>
 </nav>
 <main role="main"> 
-  
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
-    <div class="container-fluid" >
+  <!-- Main jumbotron -->
+  <div class="jumbotron" id="fpJumbo">
+    <video id="starField" autoplay loop muted>
+      <source src="assets/vid/star-field.webm" type="video/webm">
+    </video>
+    <div class="container-fluid">
       <div class="d-flex justify-content-between flex-wrap">
         <div id="hdrImg"> <img class="img-fluid" style="border:4px solid silver;border-radius:20px;" src="assets/img/misc/classic-scifi-800x800.png"> </div>
-        <div id="hdrText">
+        <div id="hdrText" style="color:white;">
           <p>You may think you covered the classics in high school English, but how many of the science fiction greats have you read? There’s a whole world of classic science fiction out there that you may not have discovered yet—and it's well worth your time! </p>
           <p>The classic scifi on this site includes hard and soft science fiction and both novels and short stories. Scientific accuracy is ascendant in <a href="#" data-toggle="modal" data-target="#hardscifiModal">hard science fiction</a>, while the social sciences are featured in <a href="#" data-toggle="modal" data-target="#softscifiModal">soft science fiction</a>. There are space operas with heroes and heroines on distant planets; time travel which been around since Mark Twain’s day; military science fiction where soldiers drive the narrative; dystopian fiction where society has usually gone awry; superhuman stories where humans develop new or greater skills and the post apocalyptic fiction sub-genre. There are many recurrent powerful themes such as machine and human relationships, aliens and human relationships, biological and ecological matters, and paranormal activities.</p>
         </div>
       </div>
-      <div id="hdrCovers" class="d-flex justify-content-between flex-wrap"> 
-        <a href="asimov.html"><img class="img-fluid hdrCover" src="assets/img/asimov/cover-foundation.jpg"></a>
-        <a href="bradbury.html"><img class="hdrCover img-fluid" src="assets/img/bradbury/cover-i-sing-the-body-electric.jpg"></a>
-        <a href="clarke.html"><img class="img-fluid hdrCover" src="assets/img/clarke/cover-childhoods-end.jpg"></a>
-        <a href="dick.html"><img class="img-fluid hdrCover" src="assets/img/dick/cover-the-man-in-the-high-castle.jpg"></a>
-        <a href="ellison.html"><img class="img-fluid hdrCover" src="assets/img/ellison/cover-i-have-n0-mouth-and-i-must-scream.jpg"></a>
-        <a href="heinlein.html"><img class="img-fluid hdrCover" src="assets/img/heinlein/cover-stranger-in-a-strange-land.jpg"></a>
-        <a href="herbert.html"><img class="img-fluid hdrCover" src="assets/img/herbert/cover-dune.jpg"></a>
-        <a href="lem.html"><img class="img-fluid hdrCover" src="assets/img/lem/cover-solaris.jpg"></a>
-        <a href="orwell.html"><img class="img-fluid hdrCover" src="assets/img/orwell/cover-1984.jpg"></a>
-        <a href="verne.html"><img class="img-fluid hdrCover" src="assets/img/verne/cover-twenty-thousand-leagues-under-the-sea.jpg"></a>
-      </div>
+      <div id="hdrCovers" class="d-flex justify-content-between flex-wrap"> <a href="asimov.html"><img class="img-fluid hdrCover" src="assets/img/asimov/cover-foundation.jpg"></a> <a href="bradbury.html"><img class="hdrCover img-fluid" src="assets/img/bradbury/cover-i-sing-the-body-electric.jpg"></a> <a href="clarke.html"><img class="img-fluid hdrCover" src="assets/img/clarke/cover-childhoods-end.jpg"></a> <a href="dick.html"><img class="img-fluid hdrCover" src="assets/img/dick/cover-the-man-in-the-high-castle.jpg"></a> <a href="ellison.html"><img class="img-fluid hdrCover" src="assets/img/ellison/cover-i-have-n0-mouth-and-i-must-scream.jpg"></a> <a href="heinlein.html"><img class="img-fluid hdrCover" src="assets/img/heinlein/cover-stranger-in-a-strange-land.jpg"></a> <a href="herbert.html"><img class="img-fluid hdrCover" src="assets/img/herbert/cover-dune.jpg"></a> <a href="lem.html"><img class="img-fluid hdrCover" src="assets/img/lem/cover-solaris.jpg"></a> <a href="orwell.html"><img class="img-fluid hdrCover" src="assets/img/orwell/cover-1984.jpg"></a> <a href="verne.html"><img class="img-fluid hdrCover" src="assets/img/verne/cover-twenty-thousand-leagues-under-the-sea.jpg"></a> </div>
     </div>
-   </div>
-  <div class="container-fluid"> 
+  </div>
+  <div class="container-fluid" id="fpLists"> 
     <!-- Example row of columns -->
     <div class="row">
       <div class="col-md-6">
@@ -70,11 +61,7 @@
           <tbody>
             <tr>
               <td>Isaac Asimov</td>
-              <td>
-                <a href="#" data-toggle="modal" data-target="#irobotModal">
-                  I, Robot
-                </a>
-              </td>
+              <td><a href="#" data-toggle="modal" data-target="#irobotModal"> I, Robot </a></td>
             </tr>
             <tr>
               <td>Ray Bradbury
@@ -130,11 +117,7 @@
           <tbody>
             <tr>
               <td>Douglas Adams</td>
-              <td>
-                 <a href="#" data-toggle="modal" data-target="#hitchhikerModal">
-                  Hitchhikers Guide to the Galaxy
-                </a>
-              </td>
+              <td><a href="#" data-toggle="modal" data-target="#hitchhikerModal"> Hitchhikers Guide to the Galaxy </a></td>
             </tr>
             <tr>
               <td>Greg Bear</td>
@@ -180,578 +163,556 @@
               <td>H. G. Wells</td>
               <td><a href="#" data-toggle="modal" data-target="#timemachineModal">The Time Machine</a></td>
             </tr>
-            </tbody>
+          </tbody>
         </table>
-       </div>
+      </div>
     </div>
     <hr>
   </div>
   <!-- /container --> 
-   <!-- Modal -->
-    <div class="modal fade" id="irobotModal" tabindex="-1" role="dialog" aria-labelledby="irobotModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="irobotModalLabel">Isaac Asimov - I, Robot</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/asimov/cover-i-robot.jpg" alt="Cover of I, Robot">
-            <p>Asimov’s robot stories include the five volumes:
-            <ul>
-              <li>I, Robot</li>
-              <li>The Rest of the Robots</li>
-              <li>The Complete Robot</li>
-              <li>Robot Dreams (Remembering Tomorrow)</li>
-              <li>Robot Visions</li>
-            </ul>
-            The Three Laws of Robotics are first articulated in &quot;I, Robot&quot;, and they quoted from the textbook, the <i>Handbook of Robotics</i>.
-            <ol>
-              <li>A robot may not injure a human being or, through inaction, allow a human being to come to harm.</li>
-              <li>A robot must obey orders given it by human beings except where such orders would conflict with the First Law.</li>
-              <li>A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.</li>
-            </ol>
-            When the story begins in 2057, Dr. Susan Calvin, chief robo-psychologist for United States Robots, is being interviewed by a journalist, who cannot remember a time when robots didn’t exist. Dr. Calvin is 75 years old and about to retire. Based on a series of reminiscinces by Dr. Calvin, Asimov relates the history of robotics and her role in it.</p> 
+  <!-- Modal -->
+  <div class="modal fade" id="irobotModal" tabindex="-1" role="dialog" aria-labelledby="irobotModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="irobotModalLabel">Isaac Asimov - I, Robot</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
         </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/asimov/cover-i-robot.jpg" alt="Cover of I, Robot">
+          <p>Asimov’s robot stories include the five volumes:
+          
+          <ul>
+            <li>I, Robot</li>
+            <li>The Rest of the Robots</li>
+            <li>The Complete Robot</li>
+            <li>Robot Dreams (Remembering Tomorrow)</li>
+            <li>Robot Visions</li>
+          </ul>
+          The Three Laws of Robotics are first articulated in &quot;I, Robot&quot;, and they quoted from the textbook, the <i>Handbook of Robotics</i>.
+          <ol>
+            <li>A robot may not injure a human being or, through inaction, allow a human being to come to harm.</li>
+            <li>A robot must obey orders given it by human beings except where such orders would conflict with the First Law.</li>
+            <li>A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.</li>
+          </ol>
+          When the story begins in 2057, Dr. Susan Calvin, chief robo-psychologist for United States Robots, is being interviewed by a journalist, who cannot remember a time when robots didn’t exist. Dr. Calvin is 75 years old and about to retire. Based on a series of reminiscinces by Dr. Calvin, Asimov relates the history of robotics and her role in it.
+          </p>
         </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="hitchhikerModal" tabindex="-1" role="dialog" aria-labelledby="hitchhikerModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="hitchhikerModalLabel">Douglas Adams - Hitchhiker's Guide to the Galaxy</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-hitchhikers-guide-to-the-galaxy.jpg" alt="Cover of The Hitchhikers Guide to the Galaxy">
-            <p>The Hitchhiker's Guide to the Galaxy is the first of five books in the Hitchhiker's Guide to the Galaxy comedy science fiction &quot;trilogy&quot; by Douglas Adams. The novel is an adaptation of the first four parts of Adams' radio series of the same name. The novel was first published in London on 12 October 1979. It sold 250,000 copies in the first three months.</p>
-            <p>The namesake of the novel is The Hitchhiker's Guide to the Galaxy, a fictional guide book for hitchhikers (inspired by the Hitch-hiker's Guide to Europe) written in the form of an encyclopedia.</p>
-            <p>The book begins with city council workmen arriving at Arthur Dent's house. They wish to demolish his house in order to build a bypass.</p>
-            <p>Arthur's best friend, Ford Prefect, arrives, warning him of the end of the world. Ford is revealed to be an alien who had come to Earth to research it for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet and place in the universe. The two head to a pub, where the locals question Ford's knowledge of the Apocalypse. An alien race, known as Vogons, show up to demolish Earth in order to build a bypass for an intergalactic highway. Arthur and Ford manage to get onto the Vogon ship just before Earth is demolished, where they are forced to listen to horrible Vogon poetry as a form of torture. Arthur and Ford are ordered to say how much they like the poetry in order to avoid being thrown out of the airlock, and while Ford finds listening to be painful, Arthur believes it to be genuinely good, since human poetry is apparently even worse.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
   
-   <!-- Modal -->
-    <div class="modal fade" id="martianchroniclesModal" tabindex="-1" role="dialog" aria-labelledby="martianchroniclesModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="martianchroniclesModalLabel">Ray Bradbury - The Martian Chronicles</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-the-martian-chronicles3.png" alt="Cover of The Martian Chronicles">
-            <p>The Martian Chronicles is a fixup of short stories with new text connecting them into a novel.[2] Bradbury has credited Sherwood Anderson's Winesburg, Ohio[3] and John Steinbeck's The Grapes of Wrath[4] as influences on the structure of the book. He has called it a "half-cousin to a novel" and "a book of stories pretending to be a novel". As such, it is similar in structure to Bradbury's short story collection, The Illustrated Man, which also uses a thin frame story to link various unrelated short stories.</p>
-            <p>The Martian Chronicles follows a "future history" structure. The stories, complete in themselves, come together as episodes in a larger sequential narrative framework. The overall structure is in three parts, punctuated by two catastrophes: the near-extinction of the Martians and the parallel near-extinction of the human race.</p>
-            <p>The first third (set in the period from January 1999—April 2000) details the attempts of the Earthmen to reach Mars, and the various ways in which the Martians keep them from returning. In the crucial story, "—And the Moon be Still as Bright", it is revealed by the fourth exploratory expedition that the Martians have all but perished in a plague caused by germs brought by one of the previous expeditions. This unexpected development sets the stage for the second act (December 2001—November 2005), in which humans from Earth colonize the deserted planet, occasionally having contact with the few surviving Martians, but for the most part preoccupied with making Mars a second Earth. However, as war on Earth threatens, most of the settlers pack up and return home. A global nuclear war ensues, cutting off contact between Mars and Earth. The third act (December 2005—October 2026) deals with the aftermath of the war, and concludes with the prospect of the few surviving humans becoming the new Martians, a prospect already foreshadowed in "—And the Moon be Still as Bright", and which allows the book to return to its beginning.</p>
+  <!-- Modal -->
+  <div class="modal fade" id="hitchhikerModal" tabindex="-1" role="dialog" aria-labelledby="hitchhikerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="hitchhikerModalLabel">Douglas Adams - Hitchhiker's Guide to the Galaxy</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
         </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-hitchhikers-guide-to-the-galaxy.jpg" alt="Cover of The Hitchhikers Guide to the Galaxy">
+          <p>The Hitchhiker's Guide to the Galaxy is the first of five books in the Hitchhiker's Guide to the Galaxy comedy science fiction &quot;trilogy&quot; by Douglas Adams. The novel is an adaptation of the first four parts of Adams' radio series of the same name. The novel was first published in London on 12 October 1979. It sold 250,000 copies in the first three months.</p>
+          <p>The namesake of the novel is The Hitchhiker's Guide to the Galaxy, a fictional guide book for hitchhikers (inspired by the Hitch-hiker's Guide to Europe) written in the form of an encyclopedia.</p>
+          <p>The book begins with city council workmen arriving at Arthur Dent's house. They wish to demolish his house in order to build a bypass.</p>
+          <p>Arthur's best friend, Ford Prefect, arrives, warning him of the end of the world. Ford is revealed to be an alien who had come to Earth to research it for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet and place in the universe. The two head to a pub, where the locals question Ford's knowledge of the Apocalypse. An alien race, known as Vogons, show up to demolish Earth in order to build a bypass for an intergalactic highway. Arthur and Ford manage to get onto the Vogon ship just before Earth is demolished, where they are forced to listen to horrible Vogon poetry as a form of torture. Arthur and Ford are ordered to say how much they like the poetry in order to avoid being thrown out of the airlock, and while Ford finds listening to be painful, Arthur believes it to be genuinely good, since human poetry is apparently even worse.</p>
         </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="kindredModal" tabindex="-1" role="dialog" aria-labelledby="kindredModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="kindredModalLabel">Octavia Butler - Kindred</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-kindred.png" alt="Cover of Kindred">
-            <p>Kindred is a novel by American writer Octavia E. Butler that incorporates time travel and is modeled on slave narratives. First published in 1979, it is still widely popular. It has been frequently chosen as a text for community-wide reading programs and book organizations, as well as being a common choice for high school and college courses. </p>
-            <p>The book is the first-person account of a young African-American woman writer, Dana, who finds herself being shunted in time between her Los Angeles, California home in 1976 and a pre-Civil War Maryland plantation. There she meets her ancestors: a proud black freewoman and a white planter who has forced her into slavery and concubinage. As Dana's stays in the past become longer, the young woman becomes intimately entangled with the plantation community. She makes hard choices to survive slavery and to ensure her return to her own time. </p>
-            <p>Kindred explores the dynamics and dilemmas of antebellum slavery from the sensibility of a late 20th-century black woman, who is aware of its legacy in contemporary American society. Through the two interracial couples who form the emotional core of the story, the novel also explores the intersection of power, gender, and race issues, and speculates on the prospects of future egalitarianism. </p>
-            <p>While most of Butler's work is classified as science fiction, Kindred is considered to cross disciplinary boundaries. It has been classified also as literature or African-American literature. Butler has categorized the work as &quot;a kind of grim fantasy.&quot; </p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="endersgameModal" tabindex="-1" role="dialog" aria-labelledby="endersgameModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="endersgameModalLabel">Orson Scott Card - Ender's Game</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-enders-game.png" alt="Cover of Ender's Game">
-            <p>Ender's Game is a 1985 military science fiction novel by American author Orson Scott Card. Set at an unspecified date in Earth's future, the novel presents an imperiled mankind after two conflicts with the Formics, an insectoid alien species which they dub the "buggers". In preparation for an anticipated third invasion, children, including the novel's protagonist, Andrew "Ender" Wiggin, are trained from a very young age through increasingly difficult games including some in zero gravity, where Ender's tactical genius is revealed.</p>
-            <p>The book originated as the short story "Ender's Game", published in the August 1977 issue of Analog Science Fiction and Fact. Elaborating on characters and plot lines depicted in the novel, Card later wrote additional books to form the Ender's Game series. Card released an updated version of Ender's Game in 1991, changing some political facts to reflect the times more accurately; e.g., to include the collapse of the Soviet Union and the end of the Cold War.</p>
-            <p>Reception of the book has generally been positive. It has also become suggested reading for many military organizations, including the United States Marine Corps.[4] Ender's Game won the 1985 Nebula Award for best novel[5] and the 1986 Hugo Award for best novel.[6] Its sequels, Speaker for the Dead, Xenocide, Children of the Mind and Ender in Exile, follow Ender's subsequent travels to many different worlds in the galaxy. In addition, the later novella A War of Gifts and novel Ender's Shadow take place during the same time period as the original.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="dhalgrenModal" tabindex="-1" role="dialog" aria-labelledby="dhalgrenModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="dhalgrenModalLabel">Samuel R. Delany - Dhalgren</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-dhalgren.png" alt="Cover of Dhalgren">
-            <p>The city of Bellona is severely damaged; radio, television, and telephones do not reach it. People enter and leave by crossing a bridge on foot.</p>
-            <p>Inexplicable events punctuate the novel: One night the perpetual cloud cover parts to reveal two moons in the sky. One day a red sun swollen to hundreds of times its normal size rises to terrify the populace, then retreats across the sky to set on the same horizon. Street signs and landmarks shift constantly, while time appears to contract and dilate. Buildings burn for days, but are never consumed, while others burn and later show no signs of damage. Gangs roam the nighttime streets, their members hidden within holographic projections of gigantic insects or mythological creatures. The few people left in Bellona struggle with survival, boredom, and each other.</p>
-            <p>The novel's protagonist is &quot;the Kid&quot;, (sometimes &quot;Kidd&quot;), a drifter who suffers from partial amnesia: he can't remember either his own name or those of his parents, though he knows his mother was an American Indian. He wears only one sandal, shoe, or boot, as do characters in two other Delany novels and one short story: Mouse in Nova (1968), Hogg in Hogg (1995), and Roger in &quot;We, in Some Strange Power's Employ Move on a Rigorous Line&quot; (1967). Possibly he is intermittently schizophrenic: the novel’s narrative is intermittently incoherent (particularly at its end), the protagonist has memories of a stay in a mental hospital, and his perception of reality and the passages of time sometimes differ from those of other characters. Over the course of the story he also suffers from significant memory loss. In addition, he is dyslexic, confusing left and right and often taking wrong turns at street corners and getting lost in the city. It is therefore unclear to what extent the events in the story are the product of an unreliable narrator.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="electricsheepModal" tabindex="-1" role="dialog" aria-labelledby="electricsheepModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="electricsheepModalLabel">Philip K. Dick - Do Androids Dream of Electric Sheep?</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/dick/cover-do-androids-dream-of-electric-sheep.jpg" alt="Cover of Do Androids Dream of Electric Sheep?">
-            <p>Do Androids Dream of Electric Sheep? (retitled Blade Runner: Do Androids Dream of Electric Sheep? in some later printings) is a science fiction novel by American writer Philip K. Dick, first published in 1968. The novel is set in a post-apocalyptic San Francisco, where Earth's life has been greatly damaged by nuclear global war. Most animal species are endangered or extinct from extreme radiation poisoning, so that owning an animal is now a sign of status and empathy, an attitude encouraged towards animals. The book served as the primary basis for the 1982 film Blade Runner, and many elements and themes from it were used in its 2017 sequel Blade Runner 2049.</p>
-            <p>The main plot follows Rick Deckard, a bounty hunter who is tasked with &quot;retiring&quot; (i.e. killing) six escaped Nexus-6 model androids, while a secondary plot follows John Isidore, a man of sub-par IQ who aids the fugitive androids. In connection with Deckard's mission, the novel explores the issue of what it is to be human and whether empathy is a purely human ability.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="foreverwarModal" tabindex="-1" role="dialog" aria-labelledby="foreverwarModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="foreverwarModalLabel">Joe Haldeman - The Forever War</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-the-forever-war.png" alt="Cover of The Forever War">
-            <p>The Forever War (1974) is a military science fiction novel by American author Joe Haldeman, telling the contemplative story of soldiers fighting an interstellar war between Man and the Taurans. It won the Nebula Award in 1975, and the Hugo and the Locus awards in 1976. Forever Free (1999) and Forever Peace (1997) are, respectively, direct and thematic sequel novels. The novella A Separate War (1999) is another sequel of sorts, occurring simultaneously to the final portion of The Forever War. Informally, the novels compose The Forever War series; the novel also inspired a comic book and a board game.</p>
-            <p>The Forever War is the first title in the SF Masterworks series.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="duneModal" tabindex="-1" role="dialog" aria-labelledby="duneModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="duneModalLabel">Frank Herbert - Dune</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/herbert/cover-dune.jpg" alt="Cover of Dune">
-            <p>Dune is a 1965 science fiction novel by American author Frank Herbert, originally published as two separate serials in Analog magazine. It tied with Roger Zelazny's This Immortal for the Hugo Award in 1966, and it won the inaugural Nebula Award for Best Novel. It is the first installment of the Dune saga, and in 2003 was cited as the world's best-selling science fiction novel.</p>
-            <p>Set in the distant future amidst a feudal interstellar society in which noble houses, in control of individual planets, owe allegiance to the Padishah Emperor, Dune tells the story of young Paul Atreides, whose noble family accepts the stewardship of the desert planet Arrakis. As this planet is the only source of the oracular spice melange, the most important and valuable substance in the universe, control of Arrakis is a coveted—and dangerous—undertaking. The story explores the multi-layered interactions of politics, religion, ecology, technology, and human emotion, as the factions of the empire confront each other in a struggle for the control of Arrakis and its spice.</p>
-            <p>Herbert wrote five sequels: Dune Messiah, Children of Dune, God Emperor of Dune, Heretics of Dune, and Chapterhouse: Dune. The first novel also inspired a 1984 film adaptation by David Lynch, the 2000 Sci-Fi Channel miniseries Frank Herbert's Dune and its 2003 sequel Frank Herbert's Children of Dune (which combines the events of Dune Messiah and Children of Dune), computer games, several board games, songs, and a series of followups, including prequels and sequels, that were co-written by Kevin J. Anderson and the author's son, Brian Herbert, starting in 1999.</p>
-            <p>Since 2009, the names of planets from the Dune novels have been adopted for the real-life nomenclature of plains and other features on Saturn's moon Titan.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="bravenewworldModal" tabindex="-1" role="dialog" aria-labelledby="bravenewworldModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="bravenewworldModalLabel">Aldous Huxley – Brave New World</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-brave-new-world.png" alt="Cover of Brave New World">
-            <p>Brave New World is a dystopian novel written in 1931 by English author Aldous Huxley, and published in 1932. Largely set in a futuristic World State of genetically modified citizens and an intelligence-based social hierarchy, the novel anticipates huge scientific developments in reproductive technology, sleep-learning, psychological manipulation, and classical conditioning that are combined to make a utopian society that goes challenged only by a single outsider. Huxley followed this book with a reassessment in an essay, Brave New World Revisited (1958), and with Island (1962), his final novel.</p>
-            <p>In 1999, the Modern Library ranked Brave New World fifth on its list of the 100 best English-language novels of the 20th century. In 2003, Robert McCrum writing for The Observer included Brave New World chronologically at number 53 in "the top 100 greatest novels of all time", and the novel was listed at number 87 on the BBC's survey The Big Read.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="nineteeneightyfourModal" tabindex="-1" role="dialog" aria-labelledby="nineteeneightyfourModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="nineteeneightyfourModalLabel">George Orwell - 1984</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/orwell/cover-1984.jpg" alt="Cover of 1984">
-            <p>Nineteen Eighty-Four, often published as 1984, is a dystopian novel by English writer George Orwell published in June 1949. The novel is set in the year 1984 when most of the world population have become victims of perpetual war, omnipresent government surveillance and propaganda.</p>
-            <p>In the novel, Great Britain ("Airstrip One") has become a province of a superstate named Oceania. Oceania is ruled by the "Party", who employ the "Thought Police" to persecute individualism and independent thinking. The Party's leader is Big Brother, who enjoys an intense cult of personality but may not even exist. The protagonist of the novel, Winston Smith, is a rank-and-file Party member. Smith is an outwardly diligent and skillful worker, but he secretly hates the Party and dreams of rebellion against Big Brother. Smith rebels by entering a forbidden relationship with fellow employee Julia.</p>
-            <p>As literary political fiction and dystopian science-fiction, Nineteen Eighty-Four is a classic novel in content, plot, and style. Many of its terms and concepts, such as Big Brother, doublethink, thoughtcrime, Newspeak, Room 101, telescreen, 2 + 2 = 5, and memory hole, have entered into common usage since its publication in 1949. Nineteen Eighty-Four popularized the adjective Orwellian, which connotes official deception, secret surveillance, brazenly misleading terminology and manipulation of recorded history by a totalitarian or authoritarian state. In 2005, the novel was chosen by Time magazine as one of the 100 best English-language novels from 1923 to 2005. It was awarded a place on both lists of Modern Library 100 Best Novels, reaching number 13 on the editors' list, and 6 on the readers' list. In 2003, the novel was listed at number 8 on the BBC's survey The Big Read.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="frankensteinModal" tabindex="-1" role="dialog" aria-labelledby="frankensteinModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="frankensteinModalLabel">Mary Shelley - Frankenstein</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-frankenstein.png" alt="Cover of Frankenstein">
-            <p>Frankenstein; or, The Modern Prometheus is a novel written by English author Mary Shelley (1797–1851) that tells the story of Victor Frankenstein, a young scientist who creates a hideous, sapient creature in an unorthodox scientific experiment. Shelley started writing the story when she was 18, and the first edition of the novel was published anonymously in London on 1 January 1818, when she was 20. Her name first appeared on the second edition, published in 1823.</p>
-            <p>Shelley travelled through Europe in 1814, journeying along the river Rhine in Germany with a stop in Gernsheim, which is 17 kilometres (11 mi) away from Frankenstein Castle, where, two centuries before, an alchemist was engaged in experiments. Later, she travelled in the region of Geneva (Switzerland)—where much of the story takes place—and the topic of galvanism and occult ideas were themes of conversation among her companions, particularly her lover and future husband, Percy Shelley. Mary, Percy and Lord Byron decided to have a competition to see who could write the best horror story. After thinking for days, Shelley dreamt about a scientist who created life and was horrified by what he had made; her dream later evolved into the novel's story.</p>
-            <p>Frankenstein is infused with elements of the Gothic novel and the Romantic movement. At the same time, it is an early example of science fiction. Brian Aldiss has argued that it should be considered the first true science fiction story because, in contrast to previous stories with fantastical elements resembling those of later science fiction, the central character "makes a deliberate decision" and "turns to modern experiments in the laboratory" to achieve fantastic results. It has had a considerable influence in literature and popular culture and spawned a complete genre of horror stories, films and plays.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="twentythousandleaguesModal" tabindex="-1" role="dialog" aria-labelledby="twentythousandleaguesModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="twentythousandleaguesModalLabel">Mary Shelley - Frankenstein</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/verne/cover-twenty-thousand-leagues-under-the-sea.jpg" alt="Cover of Twenty Thousand Leagues Under the Sea">
-            <p>Twenty Thousand Leagues Under the Seas: A Tour of the Underwater World (French: Vingt mille lieues sous les mers: Tour du monde sous-marin, "Twenty Thousand Leagues Under the Seas: A Tour of the Underwater World") is a classic science fiction adventure novel by French writer Jules Verne published in 1870.</p>
-            <p>The novel was originally serialized from March 1869 through June 1870 in Pierre-Jules Hetzel's periodical, the Magasin d'Éducation et de Récréation. The deluxe illustrated edition, published by Hetzel in November 1871, included 111 illustrations by Alphonse de Neuville and Édouard Riou. The book was highly acclaimed when it was released and still is; it is regarded as one of the premiere adventure novels and one of Verne's greatest works, along with Around the World in Eighty Days and Journey to the Center of the Earth. The description of Nemo's ship, the Nautilus, was considered ahead of its time, as it accurately describes features on submarines, which at the time were very primitive vessels.</p>
-            <p>A model of the French submarine Plongeur (launched in 1863) was displayed at the 1867 Exposition Universelle, where it was studied by Jules Verne, who used it as an inspiration for the novel.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="darwinsradioModal" tabindex="-1" role="dialog" aria-labelledby="darwinsradioModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="darwinsradioModalLabel">Greg Bear – Darwin’s Radio</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-darwins-radio.png" alt="Cover of Darwin's Radio">
-            <p>Darwin's Radio is a 1999 science fiction novel by Greg Bear. It won the Nebula Award in 2000 for Best Novel[2] and the 2000 Endeavour Award. It was also nominated for the Hugo Award, Locus and Campbell Awards the same year.</p>
-            <p>The novel's original tagline was 'The next great war will be inside us'. It was followed by a sequel, Darwin's Children, in 2003.</p>
-            <p>In the novel, a new form of endogenous retrovirus has emerged, SHEVA. It controls human evolution by rapidly evolving the next generation while in the womb, leading to speciation.</p>
-            <p>The novel follows several characters as the &quot;plague&quot; is discovered as well as the panicked reaction of the public and the U.S. government to the disease.</p>
-            <p>Built into the human genome are non-coding sequences of DNA called introns. In Darwin's Radio, certain portions of these &quot;non-sense&quot; sequences, remnants of prehistoric retroviruses, have been activated and are translating numerous LPCs (large protein complexes). The activation of SHEVA and its consequential sudden speciation was postulated to be either controlled by a complex genetic network that perceives a need for modification or a human adaptive response to overcrowding. The disease, or rather, gene activation, is passed on laterally from male to female as per an STD. If impregnated, a woman in her first trimester who has contracted SHEVA will miscarry a deformed female fetus made of little more than two ovaries. This &quot;first stage fetus&quot; leaves behind a fertilized egg with fifty-two chromosomes rather than the typical forty-six characteristic of Homo sapiens sapiens.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="clockworkorangeModal" tabindex="-1" role="dialog" aria-labelledby="clockworkorangeModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="clockworkorangeModalLabel">Anthony Burgess – A Clockwork Orange</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-a-clockwork-orange.png" alt="Cover of A Clockwork Orange">
-            <p>A Clockwork Orange is a dystopian satirical black comedy novel by English writer Anthony Burgess, published in 1962. It is set in a near-future English society that has a youth subculture of extreme violence. The teenage protagonist, Alex, narrates his violent exploits, and his experiences with state authorities intent on reforming him. The book is partially written in a Russian-influenced argot called &quot;Nadsat&quot;, which takes its name from the Russian suffix that is equivalent to '-teen' in English. According to Burgess, it was a jeu d'esprit written in just three weeks.</p>
-            <p>In 2005, A Clockwork Orange was included on Time magazine's list of the 100 best English-language novels written since 1923, and it was named by Modern Library and its readers as one of the 100 best English-language novels of the 20th century. The original manuscript of the book has been located at McMaster University's William Ready Division of Archives and Research Collections in Hamilton, Ontario, Canada since the institution purchased the documents in 1971.</p>
-            <p>Alex is a 15-year-old living in near-future dystopian England who leads his gang on a night of opportunistic, random &quot;ultra-violence&quot;. Alex's friends (&quot;droogs&quot; in the novel's Anglo-Russian slang, 'Nadsat') are Dim, a slow-witted bruiser who is the gang's muscle; Georgie, an ambitious second-in-command; and Pete, who mostly plays along as the droogs indulge their taste for ultra-violence. Characterised as a sociopath and hardened juvenile delinquent, Alex also displays intelligence, quick wit, and a predilection for classical music; he is particularly fond of Beethoven, referred to as &quot;Lovely Ludwig Van&quot;.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="ihavenomouthModal" tabindex="-1" role="dialog" aria-labelledby="ihavenomouthModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="ihavenomouthModalLabel">Harlan Ellison – I Have No Mouth and I Must Scream</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/ellison/cover-i-have-n0-mouth-and-i-must-scream.jpg" alt="Cover of I Have No Mouth and I Must Scream">
-            <p>&quot;I Have No Mouth, and I Must Scream&quot; is a post-apocalyptic science fiction short story by American writer Harlan Ellison. It was first published in the March 1967 issue of IF: Worlds of Science Fiction.</p>
-            <p>It won a Hugo Award in 1968. The name was also used for a short story collection of Ellison's work, featuring this story. It was reprinted by the Library of America, collected in volume two (Terror and the Uncanny, from the 1940s to Now) of American Fantastic Tales (2009).</p>
-            <p>The story takes place 109 years after the complete destruction of human civilization. The Cold War had escalated into a world war, fought mainly between China, Russia, and the United States. As the war progressed, the three warring nations each created a super-computer (with artificial intelligence) capable of running the war more efficiently than humans.</p>
-            <p>The machines are each referred to as &quot;AM&quot;, which originally stood for &quot;Allied Mastercomputer&quot;, and then was later called "Adaptive Manipulator". Finally, &quot;AM&quot; stands for &quot;Aggressive Menace&quot;. One day, one of the three computers becomes self-aware, and promptly absorbs the other two, thus taking control of the entire war. It carries out campaigns of mass genocide, killing off all but four men and one woman.</p>
-            <p>The survivors live together underground in an endless complex, the only habitable place left. The master computer harbors an immeasurable hatred for the group and spends every available moment torturing them. AM has not only managed to keep the humans from taking their own lives, but has made them virtually immortal.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="neuromancerModal" tabindex="-1" role="dialog" aria-labelledby="neuromancerModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="neuromancerModalLabel">William Gibson – Neuromancer</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-neuromancer.png" alt="Cover of Neuromancer">
-            <p>Neuromancer is a 1984 science fiction novel by American-Canadian writer William Gibson. It is one of the best-known works in the cyberpunk genre and the first novel to win the Nebula Award, the Philip K. Dick Award, and the Hugo Award. It was Gibson's debut novel and the beginning of the Sprawl trilogy. Set in the future, the novel follows Henry Case, a washed-up computer hacker, who is hired by the mysterious master criminal Armitage and the equally mysterious mercenary cyborg Molly Millions for one last job: to help a powerful artificial intelligence merge with its twin into a super consciousness and take control of a virtual reality global network known as &quot;The Matrix&quot;.</p>
-            <p>Henry Dorsett Case is a low-level hustler in the dystopian underworld of Chiba City, Japan. Once a talented computer hacker, Case was caught stealing from his employer. As punishment for his theft, Case's central nervous system was damaged with a mycotoxin, leaving him unable to access the global computer network in cyberspace, a virtual reality dataspace called the &quot;matrix&quot;. Case is unemployable, suicidal, and apparently at the top of the hit list of a drug lord named Wage. Case is saved by Molly Millions, an augmented &quot;street samurai&quot; and mercenary for a shadowy US ex-military officer named Armitage, who offers to cure Case in exchange for his services as a hacker. Case jumps at the chance to regain his life as a &quot;console cowboy,&quot; but neither Case nor Molly knows what Armitage is really planning. Case's nervous system is repaired using new technology that Armitage offers the clinic as payment, but he soon learns from Armitage that sacs of the poison that first crippled him have been placed in his blood vessels as well. Armitage promises Case that if he completes his work in time, the sacs will be removed; otherwise they will dissolve, disabling him again. He also has Case's pancreas replaced and new tissue grafted into his liver, leaving Case incapable of metabolizing cocaine or amphetamines and apparently ending his drug addiction.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="strangelandModal" tabindex="-1" role="dialog" aria-labelledby="strangelandModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="strangelandModalLabel">Robert Heinlein – Stranger in a Strange Land</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/heinlein/cover-stranger-in-a-strange-land.jpg" alt="Cover of Stranger in a Strange Land">
-            <p>Stranger in a Strange Land is a 1961 science fiction novel by American author Robert A. Heinlein. It tells the story of Valentine Michael Smith, a human who comes to Earth in early adulthood after being born on the planet Mars and raised by Martians. The novel explores his interaction with—and eventual transformation of—Terran culture.</p>
-            <p>The title &quot;Stranger in a Strange Land&quot; is an allusion to the phrase in Exodus 2:22. According to Heinlein, the novel's working title was The Heretic.</p>
-            <p>In 1991, three years after Heinlein's death, his widow, Virginia Heinlein, arranged to have the original unedited manuscript published. Critics disagree about which version is superior, though Heinlein preferred the original manuscript and described the heavily edited version as &quot;telegraphese&quot;.</p>
-            <p>In 2012, the US Library of Congress named it one of 88 &quot;Books that Shaped America&quot;.</p>
-            <p>The story focuses on a human raised on Mars and his adaptation to, and understanding of, humans and their culture. It is set in a post-Third World War United States, where organized religions are politically powerful. There is a World Federation of Free Nations, including the demilitarized U.S., with a world government supported by Special Service troops.</p>
-            <p>A manned expedition is mounted to visit the planet Mars, but all contact is lost after landing. A second expedition 25 years later finds a single survivor, Valentine Michael Smith. Smith was born on the spacecraft and was raised entirely by the Martians. He is ordered by the Martians to accompany the returning expedition.</p>
-            <p>Because Smith is unaccustomed to the conditions on Earth, he is confined at Bethesda Hospital, where having never seen a human female, he is attended by male staff only. Seeing this restriction as a challenge, Nurse Gillian Boardman eludes the guards and goes in to see Smith. By sharing a glass of water with him, she inadvertently becomes his first female &quot;water brother&quot;, considered a profound relationship by the Martians.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="solarisModal" tabindex="-1" role="dialog" aria-labelledby="solarisModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="solarisModalLabel">Stanislaw Lem – Solaris</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/lem/cover-solaris.jpg" alt="Cover of Solaris">
-            <p>Solaris is a 1961 philosophical science fiction novel by Polish writer Stanisław Lem. The central theme of the book is the complete failure of human beings to understand an extraterrestrial intelligence.</p>
-            <p>While probing and examining the oceanic surface of the planet Solaris from a hovering research station, a team of human scientists is, in turn, apparently being studied by the sentient planet itself, which probes for and examines the thoughts of the human beings who are analyzing it. Solaris manifests an ability to cast their secret, guilty concerns into a material form for each scientist to personally confront. All human efforts to make sense of Solaris' activities ultimately prove to be futile. As Lem wrote, &quot;The peculiarity of those phenomena seems to suggest that we observe a kind of rational activity, but the meaning of this seemingly rational activity of the Solarian Ocean is beyond the reach of human beings&quot;. He also wrote that he deliberately chose the Ocean as a sentient alien to avoid any personification as well as the pitfalls of anthropomorphism in depicting first contact.</p>
-            <p>First published in Warsaw in 1961, the 1970 Polish-to-French-to-English translation of Solaris is the best-known of Lem's English-translated works The novel has been adapted for the screen three times: in 1968; 1972; and 2002.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="lefthandModal" tabindex="-1" role="dialog" aria-labelledby="lefthandModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="lefthandModalLabel">Ursula K Le Guin – The Left Hand of Darkness</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-the-left-hand-of-darkness.png" alt="Cover of The Left Hand of Darkness">
-            <p>The Left Hand of Darkness is a science fiction novel by U.S. writer Ursula K. Le Guin, published in 1969. The novel became immensely popular and established Le Guin's status as a major author of science fiction.</p>
-            <p>The novel follows the story of Genly Ai, a native of Terra, who is sent to the planet of Gethen as an envoy of the Ekumen, a loose confederation of planets. Ai's mission is to persuade the nations of Gethen to join the Ekumen, but he is stymied by his lack of understanding of Gethenian culture. Individuals on Gethen are ambisexual, with no fixed sex. This fact has a strong influence on the culture of the planet, and creates a barrier of understanding for Ai.</p>
-            The Left Hand of Darkness was among the first books in the genre now known as feminist science fiction and is the most famous examination of androgyny in science fiction. A major theme of the novel is the effect of sex and gender on culture and society, explored in particular through the relationship between Ai and Estraven, a Gethenian politician who trusts and helps him. Within that context, the novel also explores the interaction between the unfolding loyalties of its main characters, the loneliness and rootlessness of Ai, and the contrast between the religions of Gethen's two major nations. The theme of gender also touched off a feminist debate when it was first published, over depictions of the ambisexual Gethenians.</p>
-            <p>The novel is part of the Hainish Cycle, a series of novels and short stories by Le Guin set in the fictional Hainish universe, which she introduced in 1964 with &quot;The Dowry of the Angyar&quot;. Among the Hainish novels, it was preceded in the sequence of writing by City of Illusions and followed by The Word for World Is Forest.</p>
-            <p>The Left Hand of Darkness has been reprinted more than 30 times, and received a highly positive response from reviewers. It was voted the Hugo and Nebula Awards for Best Novel by fans and writers, respectively, and was ranked third behind Frank Herbert's Dune and Arthur C. Clarke's Childhood's End in a 1975 poll in Locus magazine. In 1987, Locus ranked it second among science fiction novels after Dune and Harold Bloom stated: &quot;Le Guin, more than Tolkien, has raised fantasy into high literature, for our time&quot;.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="contactModalLabel">Carl Sagan – Contact</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-contact.png" alt="Cover of Contact">
-            <p>Contact is a 1985 science fiction novel by American scientist Carl Sagan. It deals with the theme of contact between humanity and a more technologically advanced, extraterrestrial life form. It ranked No. 7 on the 1985 U.S. bestseller list. The novel originated as a screenplay by Sagan and Ann Druyan (whom he later married) in 1979; when development of the film stalled, Sagan decided to convert the stalled film into a novel. The film concept was subsequently revived and eventually released in 1997 as the film Contact starring Jodie Foster.</p>
-            <p>As a child, Eleanor &quot;Ellie&quot; Arroway displays a strong aptitude for science and mathematics. Dissatisfied with a school lesson, she goes to the library to convince herself that π is irrational. In sixth grade her father and role-model Theodore ("Ted") dies. A man named John Staughton becomes her stepfather and does not show as much support for her interests. Ellie refuses to accept him as a family member and concludes that her mother only remarried out of weakness.</p>
-            <p>After graduating from Harvard University, Ellie receives a doctorate from Caltech supervised by David Drumlin, a well known radio astronomer. She eventually becomes the director of "Project Argus", a radiotelescope array in New Mexico dedicated to the search for extraterrestrial intelligence (SETI). This puts her at odds with most of the scientific community, including Drumlin, who tries to have the funding to SETI cut off. To his surprise, the project discovers a signal containing a series of prime numbers coming from the Vega system 26 light years away. Further analysis reveals information in the polarization modulation of the signal. This message is a retransmission of Adolf Hitler's opening speech at the 1936 Summer Olympics in Berlin; the first television signal powerful enough to escape Earth's ionosphere.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="starmakerModal" tabindex="-1" role="dialog" aria-labelledby="starmakerModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="starmakerModalLabel">Olaf Stapledon – The Star Maker</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-star-maker.png" alt="Cover of Star Maker">
-            <p>Star Maker is a science fiction novel by British writer Olaf Stapledon, published in 1937. The book describes a history of life in the universe, dwarfing in scale Stapledon's previous book, Last and First Men (1930), a history of the human species over two billion years. Star Maker tackles philosophical themes such as the essence of life, of birth, decay and death, and the relationship between creation and creator. A pervading theme is that of progressive unity within and between different civilizations. Some of the elements and themes briefly discussed prefigure later fiction concerning genetic engineering and alien life forms. Arthur C. Clarke considered Star Maker to be one of the finest works of science fiction ever written, and Brian W. Aldiss called it &quot;the one great grey holy book of science fiction&quot;.</p>
-            <p>A single human narrator from England is transported out of his body via unexplained means. He realizes he is able to explore space and other planets. After exploring a civilization on another planet in our galaxy at a level of development similar to our own that existed millions of years ago thousands of light years from Earth (the &quot;Other Earth&quot;) in some detail, his mind merges with that of one of its inhabitants, and as they travel together, they are joined by still more minds or group-minds. This snowballing process is paralleled by the expansion of the book's scale, describing more and more planets in less and less detail.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="snowcrashModal" tabindex="-1" role="dialog" aria-labelledby="snowcrashModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="snowcrashModalLabel">Neal Stephenson – Snow Crash</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-snow-crash.png" alt="Cover of Snow Crash">
-            <p>Snow Crash is a science fiction novel by American writer Neal Stephenson, published in 1992. Like many of Stephenson's other novels it covers history, linguistics, anthropology, archaeology, religion, computer science, politics, cryptography, memetics and philosophy.</p>
-            <p>Stephenson explained the title of the novel in his 1999 essay "In the Beginning... Was the Command Line" as his term for a particular software failure mode on the early Apple Macintosh computer. Stephenson wrote about the Macintosh that &quot;When the computer crashed and wrote gibberish into the bitmap, the result was something that looked vaguely like static on a broken television set—a 'snow crash' &quot;. Stephenson has also mentioned that Julian Jaynes' book The Origin of Consciousness in the Breakdown of the Bicameral Mind was one of the main influences on Snow Crash.</p>
-            <p>The book presents the Sumerian language as the firmware programming language for the brainstem, which is supposedly functioning as the BIOS for the human brain. According to characters in the book, the goddess Asherah is the personification of a linguistic virus, similar to a computer virus. The god Enki created a counter-program which he called a nam-shub that caused all of humanity to speak different languages as a protection against Asherah (a re-interpretation of the ancient Near Eastern story of the Tower of Babel).</p>
-            <p>Snow Crash was nominated for both the British Science Fiction Award in 1993, and the Arthur C. Clarke Award in 1994.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="timemachineModal" tabindex="-1" role="dialog" aria-labelledby="timemachineModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="timemachineModalLabel">H G Wells – The Time Machine</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <img class="img-thumbnail float-right" src="assets/img/misc/cover-the-time-machine.jpg" alt="Cover of The Time Machine">
-            <p>The Time Machine is a science fiction novella by H. G. Wells, published in 1895 and written as a frame narrative. The work is generally credited with the popularization of the concept of time travel by using a vehicle that allows an operator to travel purposely and selectively forwards or backwards in time. The term &quot;time machine&quot;, coined by Wells, is now almost universally used to refer to such a vehicle.</p>
-            <p>The Time Machine has been adapted into three feature films of the same name, as well as two television versions, and a large number of comic book adaptations. It has also indirectly inspired many more works of fiction in many media productions.</p>
-            <p>The book's protagonist is a Victorian English scientist and gentleman inventor living in Richmond, Surrey, and identified by a narrator simply as the Time Traveller. The narrator recounts the Traveller's lecture to his weekly dinner guests that time is simply a fourth dimension and demonstrates a tabletop model machine for travelling through the fourth dimension. He reveals that he has built a machine capable of carrying a person through time, and returns at dinner the following week to recount a remarkable tale, becoming the new narrator.</p>
-            <p>In the new narrative, the Time Traveller tests his device. At first he thinks nothing has happened but soon finds out he went five hours into the future. He continues forward and sees his house disappear and turn into a lush garden. The Time Traveller stops in A.D. 802,701, where he meets the Eloi, a society of small, elegant, childlike adults. They live in small communities within large and futuristic yet slowly deteriorating buildings, and having a fruit-based diet. His efforts to communicate with them are hampered by their lack of curiosity or discipline. They appear happy and carefree, but fear the dark and in particular fear moonless nights. Observing them, he finds that they give no response to mysterious nocturnal disappearances. (Perhaps they had become traumatized and would not discuss it.) He speculates that they are a peaceful society.</p>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="hardscifiModal" tabindex="-1" role="dialog" aria-labelledby="hardscifiModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="hardscifiModalLabel">Hard Science Fiction</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <p>Hard science fiction is a category of science fiction characterized by an emphasis on scientific accuracy. The term was first used in print in 1957 by P. Schuyler Miller in a review of John W. Campbell's Islands of Space in the November issue of Astounding Science Fiction. The complementary term soft science fiction, formed by analogy to hard science fiction, first appeared in the late 1970s. The term is formed by analogy to the popular distinction between the "hard" (natural) and "soft" (social) sciences. Science fiction critic Gary Westfahl argues that neither term is part of a rigorous taxonomy; instead they are approximate ways of characterizing stories that reviewers and commentators have found useful.</p>
-            <p>Stories revolving around scientific and technical consistency were written as early as the 1870s with the publication of Jules Verne's Twenty Thousand Leagues Under the Sea in 1870 and Around the World in Eighty Days in 1873, among other stories. The attention to detail in Verne's work became an inspiration for many future scientists and explorers, although Verne himself denied writing as a scientist or seriously predicting machines and technology of the future.</p>
-            <footer class="blockquote-footer"><cite title="Wikipedia website">Wikipedia website</cite></footer>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   <!-- Modal -->
-    <div class="modal fade" id="softscifiModal" tabindex="-1" role="dialog" aria-labelledby="softscifiModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="softscifiModalLabel">Soft Science Fiction</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <p>Soft science fiction, or soft SF, is a category of science fiction with two different definitions. It either (1) explores the &quot;soft&quot; sciences, and especially the social sciences (for example, anthropology, sociology, or psychology), rather than engineering or the &quot;hard&quot; sciences (for example, physics, astronomy, or chemistry), or (2) is not scientifically accurate. Soft science fiction of either type is often more concerned with character and speculative societies, rather than speculative science or engineering. It is the opposite of hard science fiction. The term first appeared in the late 1970s and is attributed to Australian literary scholar Peter Nicholls.</p>
-            <footer class="blockquote-footer"><cite title="Wikipedia website">Wikipedia website</cite></footer>
-        </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
   
+  <!-- Modal -->
+  <div class="modal fade" id="martianchroniclesModal" tabindex="-1" role="dialog" aria-labelledby="martianchroniclesModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="martianchroniclesModalLabel">Ray Bradbury - The Martian Chronicles</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-the-martian-chronicles3.png" alt="Cover of The Martian Chronicles">
+          <p>The Martian Chronicles is a fixup of short stories with new text connecting them into a novel.[2] Bradbury has credited Sherwood Anderson's Winesburg, Ohio[3] and John Steinbeck's The Grapes of Wrath[4] as influences on the structure of the book. He has called it a "half-cousin to a novel" and "a book of stories pretending to be a novel". As such, it is similar in structure to Bradbury's short story collection, The Illustrated Man, which also uses a thin frame story to link various unrelated short stories.</p>
+          <p>The Martian Chronicles follows a "future history" structure. The stories, complete in themselves, come together as episodes in a larger sequential narrative framework. The overall structure is in three parts, punctuated by two catastrophes: the near-extinction of the Martians and the parallel near-extinction of the human race.</p>
+          <p>The first third (set in the period from January 1999—April 2000) details the attempts of the Earthmen to reach Mars, and the various ways in which the Martians keep them from returning. In the crucial story, "—And the Moon be Still as Bright", it is revealed by the fourth exploratory expedition that the Martians have all but perished in a plague caused by germs brought by one of the previous expeditions. This unexpected development sets the stage for the second act (December 2001—November 2005), in which humans from Earth colonize the deserted planet, occasionally having contact with the few surviving Martians, but for the most part preoccupied with making Mars a second Earth. However, as war on Earth threatens, most of the settlers pack up and return home. A global nuclear war ensues, cutting off contact between Mars and Earth. The third act (December 2005—October 2026) deals with the aftermath of the war, and concludes with the prospect of the few surviving humans becoming the new Martians, a prospect already foreshadowed in "—And the Moon be Still as Bright", and which allows the book to return to its beginning.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="kindredModal" tabindex="-1" role="dialog" aria-labelledby="kindredModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="kindredModalLabel">Octavia Butler - Kindred</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-kindred.png" alt="Cover of Kindred">
+          <p>Kindred is a novel by American writer Octavia E. Butler that incorporates time travel and is modeled on slave narratives. First published in 1979, it is still widely popular. It has been frequently chosen as a text for community-wide reading programs and book organizations, as well as being a common choice for high school and college courses. </p>
+          <p>The book is the first-person account of a young African-American woman writer, Dana, who finds herself being shunted in time between her Los Angeles, California home in 1976 and a pre-Civil War Maryland plantation. There she meets her ancestors: a proud black freewoman and a white planter who has forced her into slavery and concubinage. As Dana's stays in the past become longer, the young woman becomes intimately entangled with the plantation community. She makes hard choices to survive slavery and to ensure her return to her own time. </p>
+          <p>Kindred explores the dynamics and dilemmas of antebellum slavery from the sensibility of a late 20th-century black woman, who is aware of its legacy in contemporary American society. Through the two interracial couples who form the emotional core of the story, the novel also explores the intersection of power, gender, and race issues, and speculates on the prospects of future egalitarianism. </p>
+          <p>While most of Butler's work is classified as science fiction, Kindred is considered to cross disciplinary boundaries. It has been classified also as literature or African-American literature. Butler has categorized the work as &quot;a kind of grim fantasy.&quot; </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="endersgameModal" tabindex="-1" role="dialog" aria-labelledby="endersgameModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="endersgameModalLabel">Orson Scott Card - Ender's Game</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-enders-game.png" alt="Cover of Ender's Game">
+          <p>Ender's Game is a 1985 military science fiction novel by American author Orson Scott Card. Set at an unspecified date in Earth's future, the novel presents an imperiled mankind after two conflicts with the Formics, an insectoid alien species which they dub the "buggers". In preparation for an anticipated third invasion, children, including the novel's protagonist, Andrew "Ender" Wiggin, are trained from a very young age through increasingly difficult games including some in zero gravity, where Ender's tactical genius is revealed.</p>
+          <p>The book originated as the short story "Ender's Game", published in the August 1977 issue of Analog Science Fiction and Fact. Elaborating on characters and plot lines depicted in the novel, Card later wrote additional books to form the Ender's Game series. Card released an updated version of Ender's Game in 1991, changing some political facts to reflect the times more accurately; e.g., to include the collapse of the Soviet Union and the end of the Cold War.</p>
+          <p>Reception of the book has generally been positive. It has also become suggested reading for many military organizations, including the United States Marine Corps.[4] Ender's Game won the 1985 Nebula Award for best novel[5] and the 1986 Hugo Award for best novel.[6] Its sequels, Speaker for the Dead, Xenocide, Children of the Mind and Ender in Exile, follow Ender's subsequent travels to many different worlds in the galaxy. In addition, the later novella A War of Gifts and novel Ender's Shadow take place during the same time period as the original.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="dhalgrenModal" tabindex="-1" role="dialog" aria-labelledby="dhalgrenModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="dhalgrenModalLabel">Samuel R. Delany - Dhalgren</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-dhalgren.png" alt="Cover of Dhalgren">
+          <p>The city of Bellona is severely damaged; radio, television, and telephones do not reach it. People enter and leave by crossing a bridge on foot.</p>
+          <p>Inexplicable events punctuate the novel: One night the perpetual cloud cover parts to reveal two moons in the sky. One day a red sun swollen to hundreds of times its normal size rises to terrify the populace, then retreats across the sky to set on the same horizon. Street signs and landmarks shift constantly, while time appears to contract and dilate. Buildings burn for days, but are never consumed, while others burn and later show no signs of damage. Gangs roam the nighttime streets, their members hidden within holographic projections of gigantic insects or mythological creatures. The few people left in Bellona struggle with survival, boredom, and each other.</p>
+          <p>The novel's protagonist is &quot;the Kid&quot;, (sometimes &quot;Kidd&quot;), a drifter who suffers from partial amnesia: he can't remember either his own name or those of his parents, though he knows his mother was an American Indian. He wears only one sandal, shoe, or boot, as do characters in two other Delany novels and one short story: Mouse in Nova (1968), Hogg in Hogg (1995), and Roger in &quot;We, in Some Strange Power's Employ Move on a Rigorous Line&quot; (1967). Possibly he is intermittently schizophrenic: the novel’s narrative is intermittently incoherent (particularly at its end), the protagonist has memories of a stay in a mental hospital, and his perception of reality and the passages of time sometimes differ from those of other characters. Over the course of the story he also suffers from significant memory loss. In addition, he is dyslexic, confusing left and right and often taking wrong turns at street corners and getting lost in the city. It is therefore unclear to what extent the events in the story are the product of an unreliable narrator.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="electricsheepModal" tabindex="-1" role="dialog" aria-labelledby="electricsheepModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="electricsheepModalLabel">Philip K. Dick - Do Androids Dream of Electric Sheep?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/dick/cover-do-androids-dream-of-electric-sheep.jpg" alt="Cover of Do Androids Dream of Electric Sheep?">
+          <p>Do Androids Dream of Electric Sheep? (retitled Blade Runner: Do Androids Dream of Electric Sheep? in some later printings) is a science fiction novel by American writer Philip K. Dick, first published in 1968. The novel is set in a post-apocalyptic San Francisco, where Earth's life has been greatly damaged by nuclear global war. Most animal species are endangered or extinct from extreme radiation poisoning, so that owning an animal is now a sign of status and empathy, an attitude encouraged towards animals. The book served as the primary basis for the 1982 film Blade Runner, and many elements and themes from it were used in its 2017 sequel Blade Runner 2049.</p>
+          <p>The main plot follows Rick Deckard, a bounty hunter who is tasked with &quot;retiring&quot; (i.e. killing) six escaped Nexus-6 model androids, while a secondary plot follows John Isidore, a man of sub-par IQ who aids the fugitive androids. In connection with Deckard's mission, the novel explores the issue of what it is to be human and whether empathy is a purely human ability.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="foreverwarModal" tabindex="-1" role="dialog" aria-labelledby="foreverwarModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="foreverwarModalLabel">Joe Haldeman - The Forever War</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-the-forever-war.png" alt="Cover of The Forever War">
+          <p>The Forever War (1974) is a military science fiction novel by American author Joe Haldeman, telling the contemplative story of soldiers fighting an interstellar war between Man and the Taurans. It won the Nebula Award in 1975, and the Hugo and the Locus awards in 1976. Forever Free (1999) and Forever Peace (1997) are, respectively, direct and thematic sequel novels. The novella A Separate War (1999) is another sequel of sorts, occurring simultaneously to the final portion of The Forever War. Informally, the novels compose The Forever War series; the novel also inspired a comic book and a board game.</p>
+          <p>The Forever War is the first title in the SF Masterworks series.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="duneModal" tabindex="-1" role="dialog" aria-labelledby="duneModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="duneModalLabel">Frank Herbert - Dune</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/herbert/cover-dune.jpg" alt="Cover of Dune">
+          <p>Dune is a 1965 science fiction novel by American author Frank Herbert, originally published as two separate serials in Analog magazine. It tied with Roger Zelazny's This Immortal for the Hugo Award in 1966, and it won the inaugural Nebula Award for Best Novel. It is the first installment of the Dune saga, and in 2003 was cited as the world's best-selling science fiction novel.</p>
+          <p>Set in the distant future amidst a feudal interstellar society in which noble houses, in control of individual planets, owe allegiance to the Padishah Emperor, Dune tells the story of young Paul Atreides, whose noble family accepts the stewardship of the desert planet Arrakis. As this planet is the only source of the oracular spice melange, the most important and valuable substance in the universe, control of Arrakis is a coveted—and dangerous—undertaking. The story explores the multi-layered interactions of politics, religion, ecology, technology, and human emotion, as the factions of the empire confront each other in a struggle for the control of Arrakis and its spice.</p>
+          <p>Herbert wrote five sequels: Dune Messiah, Children of Dune, God Emperor of Dune, Heretics of Dune, and Chapterhouse: Dune. The first novel also inspired a 1984 film adaptation by David Lynch, the 2000 Sci-Fi Channel miniseries Frank Herbert's Dune and its 2003 sequel Frank Herbert's Children of Dune (which combines the events of Dune Messiah and Children of Dune), computer games, several board games, songs, and a series of followups, including prequels and sequels, that were co-written by Kevin J. Anderson and the author's son, Brian Herbert, starting in 1999.</p>
+          <p>Since 2009, the names of planets from the Dune novels have been adopted for the real-life nomenclature of plains and other features on Saturn's moon Titan.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="bravenewworldModal" tabindex="-1" role="dialog" aria-labelledby="bravenewworldModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bravenewworldModalLabel">Aldous Huxley – Brave New World</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-brave-new-world.png" alt="Cover of Brave New World">
+          <p>Brave New World is a dystopian novel written in 1931 by English author Aldous Huxley, and published in 1932. Largely set in a futuristic World State of genetically modified citizens and an intelligence-based social hierarchy, the novel anticipates huge scientific developments in reproductive technology, sleep-learning, psychological manipulation, and classical conditioning that are combined to make a utopian society that goes challenged only by a single outsider. Huxley followed this book with a reassessment in an essay, Brave New World Revisited (1958), and with Island (1962), his final novel.</p>
+          <p>In 1999, the Modern Library ranked Brave New World fifth on its list of the 100 best English-language novels of the 20th century. In 2003, Robert McCrum writing for The Observer included Brave New World chronologically at number 53 in "the top 100 greatest novels of all time", and the novel was listed at number 87 on the BBC's survey The Big Read.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="nineteeneightyfourModal" tabindex="-1" role="dialog" aria-labelledby="nineteeneightyfourModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="nineteeneightyfourModalLabel">George Orwell - 1984</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/orwell/cover-1984.jpg" alt="Cover of 1984">
+          <p>Nineteen Eighty-Four, often published as 1984, is a dystopian novel by English writer George Orwell published in June 1949. The novel is set in the year 1984 when most of the world population have become victims of perpetual war, omnipresent government surveillance and propaganda.</p>
+          <p>In the novel, Great Britain ("Airstrip One") has become a province of a superstate named Oceania. Oceania is ruled by the "Party", who employ the "Thought Police" to persecute individualism and independent thinking. The Party's leader is Big Brother, who enjoys an intense cult of personality but may not even exist. The protagonist of the novel, Winston Smith, is a rank-and-file Party member. Smith is an outwardly diligent and skillful worker, but he secretly hates the Party and dreams of rebellion against Big Brother. Smith rebels by entering a forbidden relationship with fellow employee Julia.</p>
+          <p>As literary political fiction and dystopian science-fiction, Nineteen Eighty-Four is a classic novel in content, plot, and style. Many of its terms and concepts, such as Big Brother, doublethink, thoughtcrime, Newspeak, Room 101, telescreen, 2 + 2 = 5, and memory hole, have entered into common usage since its publication in 1949. Nineteen Eighty-Four popularized the adjective Orwellian, which connotes official deception, secret surveillance, brazenly misleading terminology and manipulation of recorded history by a totalitarian or authoritarian state. In 2005, the novel was chosen by Time magazine as one of the 100 best English-language novels from 1923 to 2005. It was awarded a place on both lists of Modern Library 100 Best Novels, reaching number 13 on the editors' list, and 6 on the readers' list. In 2003, the novel was listed at number 8 on the BBC's survey The Big Read.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="frankensteinModal" tabindex="-1" role="dialog" aria-labelledby="frankensteinModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="frankensteinModalLabel">Mary Shelley - Frankenstein</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-frankenstein.png" alt="Cover of Frankenstein">
+          <p>Frankenstein; or, The Modern Prometheus is a novel written by English author Mary Shelley (1797–1851) that tells the story of Victor Frankenstein, a young scientist who creates a hideous, sapient creature in an unorthodox scientific experiment. Shelley started writing the story when she was 18, and the first edition of the novel was published anonymously in London on 1 January 1818, when she was 20. Her name first appeared on the second edition, published in 1823.</p>
+          <p>Shelley travelled through Europe in 1814, journeying along the river Rhine in Germany with a stop in Gernsheim, which is 17 kilometres (11 mi) away from Frankenstein Castle, where, two centuries before, an alchemist was engaged in experiments. Later, she travelled in the region of Geneva (Switzerland)—where much of the story takes place—and the topic of galvanism and occult ideas were themes of conversation among her companions, particularly her lover and future husband, Percy Shelley. Mary, Percy and Lord Byron decided to have a competition to see who could write the best horror story. After thinking for days, Shelley dreamt about a scientist who created life and was horrified by what he had made; her dream later evolved into the novel's story.</p>
+          <p>Frankenstein is infused with elements of the Gothic novel and the Romantic movement. At the same time, it is an early example of science fiction. Brian Aldiss has argued that it should be considered the first true science fiction story because, in contrast to previous stories with fantastical elements resembling those of later science fiction, the central character "makes a deliberate decision" and "turns to modern experiments in the laboratory" to achieve fantastic results. It has had a considerable influence in literature and popular culture and spawned a complete genre of horror stories, films and plays.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="twentythousandleaguesModal" tabindex="-1" role="dialog" aria-labelledby="twentythousandleaguesModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="twentythousandleaguesModalLabel">Mary Shelley - Frankenstein</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/verne/cover-twenty-thousand-leagues-under-the-sea.jpg" alt="Cover of Twenty Thousand Leagues Under the Sea">
+          <p>Twenty Thousand Leagues Under the Seas: A Tour of the Underwater World (French: Vingt mille lieues sous les mers: Tour du monde sous-marin, "Twenty Thousand Leagues Under the Seas: A Tour of the Underwater World") is a classic science fiction adventure novel by French writer Jules Verne published in 1870.</p>
+          <p>The novel was originally serialized from March 1869 through June 1870 in Pierre-Jules Hetzel's periodical, the Magasin d'Éducation et de Récréation. The deluxe illustrated edition, published by Hetzel in November 1871, included 111 illustrations by Alphonse de Neuville and Édouard Riou. The book was highly acclaimed when it was released and still is; it is regarded as one of the premiere adventure novels and one of Verne's greatest works, along with Around the World in Eighty Days and Journey to the Center of the Earth. The description of Nemo's ship, the Nautilus, was considered ahead of its time, as it accurately describes features on submarines, which at the time were very primitive vessels.</p>
+          <p>A model of the French submarine Plongeur (launched in 1863) was displayed at the 1867 Exposition Universelle, where it was studied by Jules Verne, who used it as an inspiration for the novel.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="darwinsradioModal" tabindex="-1" role="dialog" aria-labelledby="darwinsradioModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="darwinsradioModalLabel">Greg Bear – Darwin’s Radio</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-darwins-radio.png" alt="Cover of Darwin's Radio">
+          <p>Darwin's Radio is a 1999 science fiction novel by Greg Bear. It won the Nebula Award in 2000 for Best Novel[2] and the 2000 Endeavour Award. It was also nominated for the Hugo Award, Locus and Campbell Awards the same year.</p>
+          <p>The novel's original tagline was 'The next great war will be inside us'. It was followed by a sequel, Darwin's Children, in 2003.</p>
+          <p>In the novel, a new form of endogenous retrovirus has emerged, SHEVA. It controls human evolution by rapidly evolving the next generation while in the womb, leading to speciation.</p>
+          <p>The novel follows several characters as the &quot;plague&quot; is discovered as well as the panicked reaction of the public and the U.S. government to the disease.</p>
+          <p>Built into the human genome are non-coding sequences of DNA called introns. In Darwin's Radio, certain portions of these &quot;non-sense&quot; sequences, remnants of prehistoric retroviruses, have been activated and are translating numerous LPCs (large protein complexes). The activation of SHEVA and its consequential sudden speciation was postulated to be either controlled by a complex genetic network that perceives a need for modification or a human adaptive response to overcrowding. The disease, or rather, gene activation, is passed on laterally from male to female as per an STD. If impregnated, a woman in her first trimester who has contracted SHEVA will miscarry a deformed female fetus made of little more than two ovaries. This &quot;first stage fetus&quot; leaves behind a fertilized egg with fifty-two chromosomes rather than the typical forty-six characteristic of Homo sapiens sapiens.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="clockworkorangeModal" tabindex="-1" role="dialog" aria-labelledby="clockworkorangeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="clockworkorangeModalLabel">Anthony Burgess – A Clockwork Orange</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-a-clockwork-orange.png" alt="Cover of A Clockwork Orange">
+          <p>A Clockwork Orange is a dystopian satirical black comedy novel by English writer Anthony Burgess, published in 1962. It is set in a near-future English society that has a youth subculture of extreme violence. The teenage protagonist, Alex, narrates his violent exploits, and his experiences with state authorities intent on reforming him. The book is partially written in a Russian-influenced argot called &quot;Nadsat&quot;, which takes its name from the Russian suffix that is equivalent to '-teen' in English. According to Burgess, it was a jeu d'esprit written in just three weeks.</p>
+          <p>In 2005, A Clockwork Orange was included on Time magazine's list of the 100 best English-language novels written since 1923, and it was named by Modern Library and its readers as one of the 100 best English-language novels of the 20th century. The original manuscript of the book has been located at McMaster University's William Ready Division of Archives and Research Collections in Hamilton, Ontario, Canada since the institution purchased the documents in 1971.</p>
+          <p>Alex is a 15-year-old living in near-future dystopian England who leads his gang on a night of opportunistic, random &quot;ultra-violence&quot;. Alex's friends (&quot;droogs&quot; in the novel's Anglo-Russian slang, 'Nadsat') are Dim, a slow-witted bruiser who is the gang's muscle; Georgie, an ambitious second-in-command; and Pete, who mostly plays along as the droogs indulge their taste for ultra-violence. Characterised as a sociopath and hardened juvenile delinquent, Alex also displays intelligence, quick wit, and a predilection for classical music; he is particularly fond of Beethoven, referred to as &quot;Lovely Ludwig Van&quot;.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="ihavenomouthModal" tabindex="-1" role="dialog" aria-labelledby="ihavenomouthModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ihavenomouthModalLabel">Harlan Ellison – I Have No Mouth and I Must Scream</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/ellison/cover-i-have-n0-mouth-and-i-must-scream.jpg" alt="Cover of I Have No Mouth and I Must Scream">
+          <p>&quot;I Have No Mouth, and I Must Scream&quot; is a post-apocalyptic science fiction short story by American writer Harlan Ellison. It was first published in the March 1967 issue of IF: Worlds of Science Fiction.</p>
+          <p>It won a Hugo Award in 1968. The name was also used for a short story collection of Ellison's work, featuring this story. It was reprinted by the Library of America, collected in volume two (Terror and the Uncanny, from the 1940s to Now) of American Fantastic Tales (2009).</p>
+          <p>The story takes place 109 years after the complete destruction of human civilization. The Cold War had escalated into a world war, fought mainly between China, Russia, and the United States. As the war progressed, the three warring nations each created a super-computer (with artificial intelligence) capable of running the war more efficiently than humans.</p>
+          <p>The machines are each referred to as &quot;AM&quot;, which originally stood for &quot;Allied Mastercomputer&quot;, and then was later called "Adaptive Manipulator". Finally, &quot;AM&quot; stands for &quot;Aggressive Menace&quot;. One day, one of the three computers becomes self-aware, and promptly absorbs the other two, thus taking control of the entire war. It carries out campaigns of mass genocide, killing off all but four men and one woman.</p>
+          <p>The survivors live together underground in an endless complex, the only habitable place left. The master computer harbors an immeasurable hatred for the group and spends every available moment torturing them. AM has not only managed to keep the humans from taking their own lives, but has made them virtually immortal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="neuromancerModal" tabindex="-1" role="dialog" aria-labelledby="neuromancerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="neuromancerModalLabel">William Gibson – Neuromancer</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-neuromancer.png" alt="Cover of Neuromancer">
+          <p>Neuromancer is a 1984 science fiction novel by American-Canadian writer William Gibson. It is one of the best-known works in the cyberpunk genre and the first novel to win the Nebula Award, the Philip K. Dick Award, and the Hugo Award. It was Gibson's debut novel and the beginning of the Sprawl trilogy. Set in the future, the novel follows Henry Case, a washed-up computer hacker, who is hired by the mysterious master criminal Armitage and the equally mysterious mercenary cyborg Molly Millions for one last job: to help a powerful artificial intelligence merge with its twin into a super consciousness and take control of a virtual reality global network known as &quot;The Matrix&quot;.</p>
+          <p>Henry Dorsett Case is a low-level hustler in the dystopian underworld of Chiba City, Japan. Once a talented computer hacker, Case was caught stealing from his employer. As punishment for his theft, Case's central nervous system was damaged with a mycotoxin, leaving him unable to access the global computer network in cyberspace, a virtual reality dataspace called the &quot;matrix&quot;. Case is unemployable, suicidal, and apparently at the top of the hit list of a drug lord named Wage. Case is saved by Molly Millions, an augmented &quot;street samurai&quot; and mercenary for a shadowy US ex-military officer named Armitage, who offers to cure Case in exchange for his services as a hacker. Case jumps at the chance to regain his life as a &quot;console cowboy,&quot; but neither Case nor Molly knows what Armitage is really planning. Case's nervous system is repaired using new technology that Armitage offers the clinic as payment, but he soon learns from Armitage that sacs of the poison that first crippled him have been placed in his blood vessels as well. Armitage promises Case that if he completes his work in time, the sacs will be removed; otherwise they will dissolve, disabling him again. He also has Case's pancreas replaced and new tissue grafted into his liver, leaving Case incapable of metabolizing cocaine or amphetamines and apparently ending his drug addiction.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="strangelandModal" tabindex="-1" role="dialog" aria-labelledby="strangelandModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="strangelandModalLabel">Robert Heinlein – Stranger in a Strange Land</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/heinlein/cover-stranger-in-a-strange-land.jpg" alt="Cover of Stranger in a Strange Land">
+          <p>Stranger in a Strange Land is a 1961 science fiction novel by American author Robert A. Heinlein. It tells the story of Valentine Michael Smith, a human who comes to Earth in early adulthood after being born on the planet Mars and raised by Martians. The novel explores his interaction with—and eventual transformation of—Terran culture.</p>
+          <p>The title &quot;Stranger in a Strange Land&quot; is an allusion to the phrase in Exodus 2:22. According to Heinlein, the novel's working title was The Heretic.</p>
+          <p>In 1991, three years after Heinlein's death, his widow, Virginia Heinlein, arranged to have the original unedited manuscript published. Critics disagree about which version is superior, though Heinlein preferred the original manuscript and described the heavily edited version as &quot;telegraphese&quot;.</p>
+          <p>In 2012, the US Library of Congress named it one of 88 &quot;Books that Shaped America&quot;.</p>
+          <p>The story focuses on a human raised on Mars and his adaptation to, and understanding of, humans and their culture. It is set in a post-Third World War United States, where organized religions are politically powerful. There is a World Federation of Free Nations, including the demilitarized U.S., with a world government supported by Special Service troops.</p>
+          <p>A manned expedition is mounted to visit the planet Mars, but all contact is lost after landing. A second expedition 25 years later finds a single survivor, Valentine Michael Smith. Smith was born on the spacecraft and was raised entirely by the Martians. He is ordered by the Martians to accompany the returning expedition.</p>
+          <p>Because Smith is unaccustomed to the conditions on Earth, he is confined at Bethesda Hospital, where having never seen a human female, he is attended by male staff only. Seeing this restriction as a challenge, Nurse Gillian Boardman eludes the guards and goes in to see Smith. By sharing a glass of water with him, she inadvertently becomes his first female &quot;water brother&quot;, considered a profound relationship by the Martians.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="solarisModal" tabindex="-1" role="dialog" aria-labelledby="solarisModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="solarisModalLabel">Stanislaw Lem – Solaris</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/lem/cover-solaris.jpg" alt="Cover of Solaris">
+          <p>Solaris is a 1961 philosophical science fiction novel by Polish writer Stanisław Lem. The central theme of the book is the complete failure of human beings to understand an extraterrestrial intelligence.</p>
+          <p>While probing and examining the oceanic surface of the planet Solaris from a hovering research station, a team of human scientists is, in turn, apparently being studied by the sentient planet itself, which probes for and examines the thoughts of the human beings who are analyzing it. Solaris manifests an ability to cast their secret, guilty concerns into a material form for each scientist to personally confront. All human efforts to make sense of Solaris' activities ultimately prove to be futile. As Lem wrote, &quot;The peculiarity of those phenomena seems to suggest that we observe a kind of rational activity, but the meaning of this seemingly rational activity of the Solarian Ocean is beyond the reach of human beings&quot;. He also wrote that he deliberately chose the Ocean as a sentient alien to avoid any personification as well as the pitfalls of anthropomorphism in depicting first contact.</p>
+          <p>First published in Warsaw in 1961, the 1970 Polish-to-French-to-English translation of Solaris is the best-known of Lem's English-translated works The novel has been adapted for the screen three times: in 1968; 1972; and 2002.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="lefthandModal" tabindex="-1" role="dialog" aria-labelledby="lefthandModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="lefthandModalLabel">Ursula K Le Guin – The Left Hand of Darkness</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-the-left-hand-of-darkness.png" alt="Cover of The Left Hand of Darkness">
+          <p>The Left Hand of Darkness is a science fiction novel by U.S. writer Ursula K. Le Guin, published in 1969. The novel became immensely popular and established Le Guin's status as a major author of science fiction.</p>
+          <p>The novel follows the story of Genly Ai, a native of Terra, who is sent to the planet of Gethen as an envoy of the Ekumen, a loose confederation of planets. Ai's mission is to persuade the nations of Gethen to join the Ekumen, but he is stymied by his lack of understanding of Gethenian culture. Individuals on Gethen are ambisexual, with no fixed sex. This fact has a strong influence on the culture of the planet, and creates a barrier of understanding for Ai.</p>
+          The Left Hand of Darkness was among the first books in the genre now known as feminist science fiction and is the most famous examination of androgyny in science fiction. A major theme of the novel is the effect of sex and gender on culture and society, explored in particular through the relationship between Ai and Estraven, a Gethenian politician who trusts and helps him. Within that context, the novel also explores the interaction between the unfolding loyalties of its main characters, the loneliness and rootlessness of Ai, and the contrast between the religions of Gethen's two major nations. The theme of gender also touched off a feminist debate when it was first published, over depictions of the ambisexual Gethenians.
+          </p>
+          <p>The novel is part of the Hainish Cycle, a series of novels and short stories by Le Guin set in the fictional Hainish universe, which she introduced in 1964 with &quot;The Dowry of the Angyar&quot;. Among the Hainish novels, it was preceded in the sequence of writing by City of Illusions and followed by The Word for World Is Forest.</p>
+          <p>The Left Hand of Darkness has been reprinted more than 30 times, and received a highly positive response from reviewers. It was voted the Hugo and Nebula Awards for Best Novel by fans and writers, respectively, and was ranked third behind Frank Herbert's Dune and Arthur C. Clarke's Childhood's End in a 1975 poll in Locus magazine. In 1987, Locus ranked it second among science fiction novels after Dune and Harold Bloom stated: &quot;Le Guin, more than Tolkien, has raised fantasy into high literature, for our time&quot;.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Carl Sagan – Contact</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-contact.png" alt="Cover of Contact">
+          <p>Contact is a 1985 science fiction novel by American scientist Carl Sagan. It deals with the theme of contact between humanity and a more technologically advanced, extraterrestrial life form. It ranked No. 7 on the 1985 U.S. bestseller list. The novel originated as a screenplay by Sagan and Ann Druyan (whom he later married) in 1979; when development of the film stalled, Sagan decided to convert the stalled film into a novel. The film concept was subsequently revived and eventually released in 1997 as the film Contact starring Jodie Foster.</p>
+          <p>As a child, Eleanor &quot;Ellie&quot; Arroway displays a strong aptitude for science and mathematics. Dissatisfied with a school lesson, she goes to the library to convince herself that π is irrational. In sixth grade her father and role-model Theodore ("Ted") dies. A man named John Staughton becomes her stepfather and does not show as much support for her interests. Ellie refuses to accept him as a family member and concludes that her mother only remarried out of weakness.</p>
+          <p>After graduating from Harvard University, Ellie receives a doctorate from Caltech supervised by David Drumlin, a well known radio astronomer. She eventually becomes the director of "Project Argus", a radiotelescope array in New Mexico dedicated to the search for extraterrestrial intelligence (SETI). This puts her at odds with most of the scientific community, including Drumlin, who tries to have the funding to SETI cut off. To his surprise, the project discovers a signal containing a series of prime numbers coming from the Vega system 26 light years away. Further analysis reveals information in the polarization modulation of the signal. This message is a retransmission of Adolf Hitler's opening speech at the 1936 Summer Olympics in Berlin; the first television signal powerful enough to escape Earth's ionosphere.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="starmakerModal" tabindex="-1" role="dialog" aria-labelledby="starmakerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="starmakerModalLabel">Olaf Stapledon – The Star Maker</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-star-maker.png" alt="Cover of Star Maker">
+          <p>Star Maker is a science fiction novel by British writer Olaf Stapledon, published in 1937. The book describes a history of life in the universe, dwarfing in scale Stapledon's previous book, Last and First Men (1930), a history of the human species over two billion years. Star Maker tackles philosophical themes such as the essence of life, of birth, decay and death, and the relationship between creation and creator. A pervading theme is that of progressive unity within and between different civilizations. Some of the elements and themes briefly discussed prefigure later fiction concerning genetic engineering and alien life forms. Arthur C. Clarke considered Star Maker to be one of the finest works of science fiction ever written, and Brian W. Aldiss called it &quot;the one great grey holy book of science fiction&quot;.</p>
+          <p>A single human narrator from England is transported out of his body via unexplained means. He realizes he is able to explore space and other planets. After exploring a civilization on another planet in our galaxy at a level of development similar to our own that existed millions of years ago thousands of light years from Earth (the &quot;Other Earth&quot;) in some detail, his mind merges with that of one of its inhabitants, and as they travel together, they are joined by still more minds or group-minds. This snowballing process is paralleled by the expansion of the book's scale, describing more and more planets in less and less detail.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="snowcrashModal" tabindex="-1" role="dialog" aria-labelledby="snowcrashModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="snowcrashModalLabel">Neal Stephenson – Snow Crash</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-snow-crash.png" alt="Cover of Snow Crash">
+          <p>Snow Crash is a science fiction novel by American writer Neal Stephenson, published in 1992. Like many of Stephenson's other novels it covers history, linguistics, anthropology, archaeology, religion, computer science, politics, cryptography, memetics and philosophy.</p>
+          <p>Stephenson explained the title of the novel in his 1999 essay "In the Beginning... Was the Command Line" as his term for a particular software failure mode on the early Apple Macintosh computer. Stephenson wrote about the Macintosh that &quot;When the computer crashed and wrote gibberish into the bitmap, the result was something that looked vaguely like static on a broken television set—a 'snow crash' &quot;. Stephenson has also mentioned that Julian Jaynes' book The Origin of Consciousness in the Breakdown of the Bicameral Mind was one of the main influences on Snow Crash.</p>
+          <p>The book presents the Sumerian language as the firmware programming language for the brainstem, which is supposedly functioning as the BIOS for the human brain. According to characters in the book, the goddess Asherah is the personification of a linguistic virus, similar to a computer virus. The god Enki created a counter-program which he called a nam-shub that caused all of humanity to speak different languages as a protection against Asherah (a re-interpretation of the ancient Near Eastern story of the Tower of Babel).</p>
+          <p>Snow Crash was nominated for both the British Science Fiction Award in 1993, and the Arthur C. Clarke Award in 1994.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="timemachineModal" tabindex="-1" role="dialog" aria-labelledby="timemachineModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="timemachineModalLabel">H G Wells – The Time Machine</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body"> <img class="img-thumbnail float-right" src="assets/img/misc/cover-the-time-machine.jpg" alt="Cover of The Time Machine">
+          <p>The Time Machine is a science fiction novella by H. G. Wells, published in 1895 and written as a frame narrative. The work is generally credited with the popularization of the concept of time travel by using a vehicle that allows an operator to travel purposely and selectively forwards or backwards in time. The term &quot;time machine&quot;, coined by Wells, is now almost universally used to refer to such a vehicle.</p>
+          <p>The Time Machine has been adapted into three feature films of the same name, as well as two television versions, and a large number of comic book adaptations. It has also indirectly inspired many more works of fiction in many media productions.</p>
+          <p>The book's protagonist is a Victorian English scientist and gentleman inventor living in Richmond, Surrey, and identified by a narrator simply as the Time Traveller. The narrator recounts the Traveller's lecture to his weekly dinner guests that time is simply a fourth dimension and demonstrates a tabletop model machine for travelling through the fourth dimension. He reveals that he has built a machine capable of carrying a person through time, and returns at dinner the following week to recount a remarkable tale, becoming the new narrator.</p>
+          <p>In the new narrative, the Time Traveller tests his device. At first he thinks nothing has happened but soon finds out he went five hours into the future. He continues forward and sees his house disappear and turn into a lush garden. The Time Traveller stops in A.D. 802,701, where he meets the Eloi, a society of small, elegant, childlike adults. They live in small communities within large and futuristic yet slowly deteriorating buildings, and having a fruit-based diet. His efforts to communicate with them are hampered by their lack of curiosity or discipline. They appear happy and carefree, but fear the dark and in particular fear moonless nights. Observing them, he finds that they give no response to mysterious nocturnal disappearances. (Perhaps they had become traumatized and would not discuss it.) He speculates that they are a peaceful society.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hardscifiModal" tabindex="-1" role="dialog" aria-labelledby="hardscifiModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="hardscifiModalLabel">Hard Science Fiction</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body">
+          <p>Hard science fiction is a category of science fiction characterized by an emphasis on scientific accuracy. The term was first used in print in 1957 by P. Schuyler Miller in a review of John W. Campbell's Islands of Space in the November issue of Astounding Science Fiction. The complementary term soft science fiction, formed by analogy to hard science fiction, first appeared in the late 1970s. The term is formed by analogy to the popular distinction between the "hard" (natural) and "soft" (social) sciences. Science fiction critic Gary Westfahl argues that neither term is part of a rigorous taxonomy; instead they are approximate ways of characterizing stories that reviewers and commentators have found useful.</p>
+          <p>Stories revolving around scientific and technical consistency were written as early as the 1870s with the publication of Jules Verne's Twenty Thousand Leagues Under the Sea in 1870 and Around the World in Eighty Days in 1873, among other stories. The attention to detail in Verne's work became an inspiration for many future scientists and explorers, although Verne himself denied writing as a scientist or seriously predicting machines and technology of the future.</p>
+          <footer class="blockquote-footer"><cite title="Wikipedia website">Wikipedia website</cite></footer>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="softscifiModal" tabindex="-1" role="dialog" aria-labelledby="softscifiModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="softscifiModalLabel">Soft Science Fiction</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body">
+          <p>Soft science fiction, or soft SF, is a category of science fiction with two different definitions. It either (1) explores the &quot;soft&quot; sciences, and especially the social sciences (for example, anthropology, sociology, or psychology), rather than engineering or the &quot;hard&quot; sciences (for example, physics, astronomy, or chemistry), or (2) is not scientifically accurate. Soft science fiction of either type is often more concerned with character and speculative societies, rather than speculative science or engineering. It is the opposite of hard science fiction. The term first appeared in the late 1970s and is attributed to Australian literary scholar Peter Nicholls.</p>
+          <footer class="blockquote-footer"><cite title="Wikipedia website">Wikipedia website</cite></footer>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 <footer class="container">
   <p>&copy; GTWD 2018-2019</p>

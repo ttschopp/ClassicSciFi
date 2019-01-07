@@ -26,6 +26,20 @@ body {
 #erList td {
   padding: 0.25rem;
 }
+video#starField {
+  position:absolute;
+  top:0; 
+  left:0; 
+  z-index:-100; 
+  overflow:hidden;
+}
+div#fpJumbo {
+  background-color:transparent;
+  margin-bottom:4.0em
+}
+div#fpLists {
+  background-color:#e9ecef;
+}
 .hdrCover {
   max-width: 100px;
 }
