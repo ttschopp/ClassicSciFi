@@ -1,6 +1,6 @@
 <?php
 // require ReCaptcha class
-require('assets/bootstrapious/autoload.php');
+require('assets/bootstrapious/ReCaptcha/autoload.php');
 
 // configure
 // an email address that will be in the From field of the email.
