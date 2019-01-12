@@ -167,41 +167,42 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
         </div>
         <div class="modal-body">
-                            <form class="contact__form" method="post" action="assets/email/mail.php">
-                                
-                                <!-- form message -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="contact__msg" style="display: none">
-                                            <p>Your message was sent successfully.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end message -->
-
-                                <!-- form element -->
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required>
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <input name="email" type="email" class="form-control" placeholder="Email" required>
-                                    </div>
-                                    <div class="col-12 form-group">
-                                        <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
-                                    </div>
-                                    <div class="col-12 form-group">
-                                        <div class="g-recaptcha" data-sitekey="6Le0SogUAAAAAPRfGovBWPgZyVjdYekHPl-tEePO"></div>
-                                    </div>
-                                    <div class="col-5">
-                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message">
-                                    </div>
-                                    <div class="col-7">
-                                        <p style="font-size:80%;">Please be patient while we process your comment. Thank you.</p>
-                                    </div>
-                                </div>
-                                <!-- end form element -->
-                            </form>
+          <!-- themehunt.com (this form plus mail.php and main.js) -->
+          <form class="contact__form" method="post" action="assets/email/mail.php">
+            
+            <!-- form message -->
+            <div class="row">
+              <div class="col-12">
+                <div class="contact__msg" style="display: none">
+                  <p>Your message was sent successfully.</p>
+                </div>
+              </div>
+            </div>
+            <!-- end message --> 
+            
+            <!-- form element -->
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <input name="name" type="text" class="form-control" placeholder="Name" required>
+              </div>
+              <div class="col-md-12 form-group">
+                <input name="email" type="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="col-12 form-group">
+                <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
+              </div>
+              <div class="col-12 form-group">
+                <div class="g-recaptcha" data-sitekey="6Le0SogUAAAAAPRfGovBWPgZyVjdYekHPl-tEePO"></div>
+              </div>
+              <div class="col-5">
+                <input name="submit" type="submit" class="btn btn-success" value="Send Message">
+              </div>
+              <div class="col-7">
+                <p style="font-size:80%;">Please be patient while we process your comment. Thank you.</p>
+              </div>
+            </div>
+            <!-- end form element -->
+          </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
