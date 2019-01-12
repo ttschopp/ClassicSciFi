@@ -13,15 +13,14 @@
 
         # FIX: Replace this email with recipient email
         $mail_to = "tttschopp@gmail.com";
-
+        
         # Sender Data
-        $subject = trim($_POST["subject"]);
+        $subject = "Comment from the Classic SciFi Website";
         $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $phone = trim($_POST["phone"]);
         $message = trim($_POST["message"]);
-
-        if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR empty($subject) OR empty($message)) {
+        
+        if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($subject) OR empty($message)) {
             # Set a 400 (bad request) response code and exit.
             http_response_code(400);
             echo '<p class="alert alert-warning">Please complete the form and try again.</p>';
@@ -30,15 +29,14 @@
 
         $ip = $_SERVER['REMOTE_ADDR'];
         $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
-        $responseKeys = json_decode($response,true);
+        // $responseKeys = json_decode($response,true);
 
-        if(intval($responseKeys["success"]) !== 1) {
+        if($response.success==false) {
           echo '<p class="alert alert-warning">Please check the the captcha form.</p>';
         } else {
             # Mail Content
             $content = "Name: $name\n";
             $content .= "Email: $email\n\n";
-            $content .= "Phone: $phone\n";
             $content .= "Message:\n$message\n";
 
             # email headers.
