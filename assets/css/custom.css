@@ -26,12 +26,12 @@ body {
 #erList td {
   padding: 0.25rem;
 }
-video#starField {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -100;
-  overflow: hidden;
+div#starField {
+  background-image: url(../vid/star-field.gif);
+  padding: 2.5em;
+}
+div#starField img {
+  opacity: 0.85;
 }
 .tooltip-inner {
   padding: 3px 3px;
@@ -63,11 +63,17 @@ div#fpLists {
 #hdrText {
   font-size: 1.25em;
   margin-left: 1.0em;
-  width: 50%;
+  color: white;
+  max-width: 850px;
+  min-width:350px;
 }
-div#hdrImg {
-  max-width: 40%;
-  min-width: 350px;
+img#hdrImg {
+  border: 4px solid silver;
+  border-radius: 20px;
+  max-width:450px;
+  min-width:300px;
+  float:left;
+  margin-right:2.5em;
 }
 div#hdrCovers {
   width: 100%;
@@ -127,7 +133,26 @@ li.groupLi {
 }
 }
 
-/* Small devices (landscape phones, less than 768px) */
+/* Extra small devices (landscape phones, ==> 576px) */
+/* Extra small devices (landscape phones, ==> 576px) */
+/* Extra small devices (landscape phones, ==> 576px) */
+/*                                                 */
+@media (max-width: 575.98px) {
+ul {
+  padding-left: 20px;
+  padding-inline-start: 20px;
+}
+#hdrText {
+  font-size: 1.0em;
+  margin-left: 0em;
+  width: 100%;
+}
+}
+
+/* Small devices (landscape phones, 576 ==> 768px) */
+/* Small devices (landscape phones, 576 ==> 768px) */
+/* Small devices (landscape phones, 576 ==> 768px) */
+/*                                                 */
 @media (min-width: 576px) and (max-width: 767.98px) {
 ul {
   padding-left: 20px;
@@ -140,18 +165,42 @@ ul {
 }
 }
 
-/* Medium devices (tablets, less than 992px) */
+/* Medium devices (tablets, 768 ==> 992px) */
+/* Medium devices (tablets, 768 ==> 992px) */
+/* Medium devices (tablets, 768 ==> 992px) */
+/*                                           */
 @media (min-width: 768px) and (max-width: 991.98px) {
+#hdrText {
+  font-size: 1.25em;
+  margin-left: 1.0em;
+  color: white;
+}
 ul {
   padding-left: 30px;
   padding-inline-start: 30px;
 }
 }
 
-/* Large devices (desktops, less than 1200px) */
+/* Large devices (desktops, 992 ==> 1200px) */
+/* Large devices (desktops, 992 ==> 1200px) */
+/* Large devices (desktops, 992 ==> 1200px) */
+/*                                            */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+#hdrText {
+  font-size: 1.25em;
+  margin-left: 1.0em;
+  color: white;
+}
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/* Extra large devices (large desktops, 1200px ==> ) */
+/* Extra large devices (large desktops, 1200px ==> ) */
+/* Extra large devices (large desktops, 1200px ==> ) */
+/*                                                     */
 @media (min-width: 1200px) {
+#hdrText {
+  font-size: 1.25em;
+  margin-left: 1.0em;
+  color: white;
+}
 }
