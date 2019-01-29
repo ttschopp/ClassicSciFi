@@ -1,0 +1,57 @@
+# Classic SciFi Specific #
+#
+# Bootstrap files #
+###################
+assets/bootstrap/
+
+# pdf Short Stories #
+#####################
+assets/pdf/
+
+# Video files #
+###############
+assets/vid/
+
+# Notes #
+#########
+# git rm --cached name_of_file - to remove file from repository
+# git reset name_of_file - to unstage the file and keep it
+
+# Generic ignores #
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

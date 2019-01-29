@@ -26,7 +26,7 @@ body {
 div#starField {
   background-image: url(../vid/star-field.gif);
   padding: 2.5em;
-  background-color:black;
+  background-color: black;
 }
 div#starField img {
   opacity: 0.85;
@@ -88,26 +88,27 @@ footer span {
 }
 .aboutCarousel {
   background-color: #f2f2f2;
-  border:2px solid black;
+  border: 2px solid black;
 }
 #commentButton {
-  margin:1.0em;
+  margin: 1.0em;
+  margin-left: 0em;
 }
 .shortStories {
   background-color: #e9ecef;
-  margin:0.25em;
-  border:3px solid silver;
+  margin: 0.25em;
+  border: 3px solid silver;
 }
 .shortButtons {
   width: 100%;
 }
 .shortButtons button {
-  margin:0.5em;
+  margin: 0.5em;
 }
 .covers3Up {
-  max-width:30%;
-  margin:0.2em;
-  min-width:100px;
+  max-width: 30%;
+  margin: 0.2em;
+  min-width: 100px;
 }
 
 /* Extra small devices (landscape phones, ==> 576px) */
@@ -134,11 +135,10 @@ div#hdrCovers {
   padding-top: 2.0em;
 }
 #aboutContent h4 {
-  font-size: 1.0em;
+  font-size: 0.8em;
 }
-#headShot {
-  width: 85vw;
-  max-width:300px;
+img#headShot {
+  width: 300px;
 }
 }
 
@@ -165,6 +165,9 @@ img#hdrImg {
 }
 #aboutContent h4 {
   font-size: 1.0em;
+}
+img#headShot {
+  width: 300px;
 }
 }
 
