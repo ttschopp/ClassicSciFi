@@ -96,7 +96,9 @@ footer span {
 }
 .shortStories {
   background-color: #e9ecef;
-  margin: 0.25em;
+  margin-bottom: 0.25em;
+  margin-left: 0px;
+  margin-right: 0px;
   border: 3px solid silver;
 }
 .shortButtons {
@@ -106,9 +108,10 @@ footer span {
   margin: 0.5em;
 }
 .covers3Up {
-  max-width: 30%;
-  margin: 0.2em;
-  min-width: 100px;
+  width: 25%;
+  height: 25%;
+  min-width:125px;
+  margin:0px;
 }
 
 /* Extra small devices (landscape phones, ==> 576px) */
