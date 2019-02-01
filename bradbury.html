@@ -54,6 +54,43 @@
         </div>
       </div>
     </div>
+  <div class="row shortStories" >
+    <div id="mobileDevice" class="col-12" style="display:none;">
+      <p>Here is Ray Bradbury short story from 1951 that is now in the public domain. Enjoy!</p>
+      <div class="d-flex justify-content-between flex-wrap shortButtons">
+        <div> <a href="assets/pdf/TheLastNightOfTheWorldByRayBradbury.pdf">
+          <button type="button" class="btn btn-primary" >The Last Night<br />of the World</button>
+          </a>  </div>
+      </div>
+    </div>
+    <div id="desktopDevice" class="col-12" style="display:none;">
+      <p>Here is Ray Bradbury short story from 1951 that is now in the public domain. Enjoy!</p>
+      <!-- Trigger the modal with a button -->
+      <div class="d-flex justify-content-between flex-wrap shortButtons">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lastnightModal">The Last Night<br />of the World</button>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div id="lastnightModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg"> 
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">&quot;The Last Night of the World&quot; by Ray Bradbury</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <embed src="assets/pdf/TheLastNightOfTheWorldByRayBradbury.pdf"
+                               frameborder="0" width="100%" height="700px">
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal --> 
+  </div>
     <div class="row">
       <div class="col-md-8"> 
         <div class="alert alert-info" role="alert">
@@ -98,5 +135,13 @@
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+		var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+		if (isMobile) {
+				document.getElementById('mobileDevice').style.display = "block";
+		} else {
+			document.getElementById('desktopDevice').style.display = "block";
+		}
+</script>
 </body>
 </html>
