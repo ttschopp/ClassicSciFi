@@ -56,7 +56,7 @@
     </div>
   </div>
   <div class="row shortStories" >
-    <div class="col-12 d-xs-block d-md-none">
+    <div id="mobileDevice" class="col-12" style="display:none;">
       <p>Want to read some of Asimov's early short stories?  Here is a sampling - Enjoy!</p>
       <div class="d-flex justify-content-between flex-wrap shortButtons">
         <div> <a href="assets/pdf/LivingSpaceByIsaacAsimov.pdf">
@@ -68,7 +68,7 @@
           </a> </div>
       </div>
     </div>
-    <div class="col-12 d-none d-md-block">
+    <div id="desktopDevice" class="col-12" style="display:none;">
       <p>Want to read some of Asimov's early short stories?  Here is a sampling - Enjoy!</p>
       <!-- Trigger the modal with a button -->
       <div class="d-flex justify-content-between flex-wrap shortButtons">
@@ -194,5 +194,13 @@
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+		var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+		if (isMobile) {
+				document.getElementById('mobileDevice').style.display = "block";
+		} else {
+			document.getElementById('desktopDevice').style.display = "block";
+		}
+</script>
 </body>
 </html>
